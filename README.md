@@ -8,8 +8,9 @@ contact@glads.fr (empreinte `41C6 DE51 D5AF A96D 1958 7A44 99D5 0993 F06A DCF8`)
   vers `glads-code.github.io.`). Dépôt public par nécessité (Pages gratuit) :
   il ne contient que la clé publique.
 - `.nojekyll` : sans lui, Jekyll ignorerait le dossier `.well-known`.
-- Le site www.glads.fr sert la même clé par la méthode directe (inopérante car
-  glads.fr redirige vers www) et en `/public.asc`.
+- Ce fichier est aussi la clé téléchargeable du site www.glads.fr (liens
+  « Clé PGP » et vCard) : plus de copie `/public.asc`. Le site garde seulement
+  la méthode directe (inopérante car glads.fr redirige vers www).
 
 ## Mettre à jour la clé
 
@@ -20,6 +21,5 @@ gpg --export --export-options export-minimal \
   > .well-known/openpgpkey/glads.fr/hu/dj3498u4hyyarh35rkjfnghbjxug6b19
 ```
 
-Faire de même dans `glads-code.github.io` (`static/.well-known/openpgpkey/hu/`
-et `static/public.asc`), puis vérifier :
+Faire de même dans `glads-code.github.io` (`static/.well-known/openpgpkey/hu/`), puis vérifier :
 `gpg --auto-key-locate clear,wkd --locate-external-keys contact@glads.fr`.
