@@ -8,10 +8,6 @@ contact@glads.fr (empreinte `41C6 DE51 D5AF A96D 1958 7A44 99D5 0993 F06A DCF8`)
   vers `glads-code.github.io.`). Dépôt public par nécessité (Pages gratuit) :
   il ne contient que la clé publique.
 - `.nojekyll` : sans lui, Jekyll ignorerait le dossier `.well-known`.
-- Ce fichier est aussi la clé téléchargeable du site www.glads.fr (liens
-  « Clé PGP » et vCard) : plus de copie `/public.asc`. Le site ne sert plus
-  aucune copie de la clé (la méthode directe y était inopérante car glads.fr
-  redirige vers www).
 
 ## Mettre à jour la clé
 
